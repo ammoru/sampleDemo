@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASTY FOOD LogIn</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+  
+  <video autoplay loop muted plays-inline >
+    <source src="./images/login_bg.mp4" type="video/mp4">
+  </video>
+  <!-- <img src="./images/water2/0b94d2c3-f34e-4e53-9080-6a41dcc3a12b.jpg" alt=""> -->
+  <div class="container">
+
+       <div class="box">
+        <form action="login_handler.php" method="post">
+          <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" name="username" id="username" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" required>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" name="remember_me" id="remember_me">
+              <label for="remember_me">Remember Me</label>
+          </div>
+          <button type="submit">Login</button>
+          <a href="#">Forgot Password?</a>  </form>
+       </div>
+  </div>
+</body>
+</html>

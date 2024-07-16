@@ -1,0 +1,108 @@
+body {
+  font-family: sans-serif;
+  /* margin: 0; */
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  
+  /* background: linear-gradient( to right,rgb(222, 17, 237), rgb(87, 2, 115),rgb(49, 41, 209),rgb(0, 70, 128)); */
+}
+.box{
+  max-width: 500px;
+  background-color: transparent;
+  /* padding: 30px; */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5xp);
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 500px;
+  background-color: transparent;
+  
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+
+  
+}
+.bg{
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 176, 243);
+  z-index: -1;
+  clip-path: circle(10%  at 0% 0%) ;
+  transition-property: clip-path;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.bg2{
+  position: absolute;
+  height: 500px;
+  width: 500px;
+
+  background-color: rgb(59, 204, 11);
+  z-index: -1;
+  clip-path: circle(40%  at 110% 100%) ;
+  transition-property: clip-path;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+.box:hover{
+  .bg{
+    clip-path:circle(60% at 0% 0%);
+  }
+  .bg2{
+    clip-path: circle(60%  at 110% 100%) ;
+  }
+ }
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h1 span{
+  color: red;
+}
+p {
+  text-align: center;
+  color: #888;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0067cc;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      /* width: 520px;   */
+      height: 200px;
+      display: flex;
+      overflow-x: scroll;
+      /* animation-name: ss;
+      animation-duration: 7s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      white-space: nowrap; */
+      
+     
+    }
+
+    @keyframes ss{
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-300%);
+      }
+    }
+    .box::-webkit-scrollbar{
+      width: 0;
+    }
+    .rr:hover .box{
+      animation-play-state: paused;
+    }
+    .box div{
+      
+      animation-name: ss;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+      min-width: 200px;
+      height: 100px;
+    }
+    .box  div:nth-child(1){
+      background-color: aquamarine;
+    }
+    .box  div:nth-child(2){
+      background-color: rgb(5, 53, 37);
+    }
+    .box  div:nth-child(3){
+      background-color: aquamarine;
+    }
+    .box  div:nth-child(4){
+      background-color: rgb(69, 50, 13);
+    }
+    .box  div:nth-child(5){
+      background-color: rgb(222, 196, 26);
+    }
+    .box  div:nth-child(6){
+      background-color: rgb(38, 16, 211);
+    }
+    .box  div:nth-child(7){
+      background-color: aquamarine;
+    }
+    .box  div:nth-child(8){
+      background-color: rgb(69, 50, 13);
+    }
+    .box  div:nth-child(9){
+      background-color: rgb(222, 196, 26);
+    }
+    .box  div:nth-child(10){
+      background-color: rgb(38, 16, 211);
+    }
+
+
+    /* 2 */
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+main {
+    padding: 0 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+label[for="remember_me"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.box{
+  width: 400px;
+  height: 400px;
+  /* background-color: #3e8e41; */
+  clip-path: circle(5% at 0% 0%) ;
+  transition-property: clip-path;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.box:hover{ 
+  clip-path:circle(200% at 0% 0%);
+  /* clip-path: none; */
+}
+  </style>
+</head>
+<body>
+    <div class="box">
+       
+    </div>
+
+
+
+      <!-- <div class="rr">
+
+        <div class="box">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>10</div>
+          <div>10</div>
+          <div>10</div>
+          <div>10</div>
+          <div>10</div>
+          <div>10</div>
+        </div>
+
+      </div> -->
+
+
+
+      
+</body>
+</html>
+
